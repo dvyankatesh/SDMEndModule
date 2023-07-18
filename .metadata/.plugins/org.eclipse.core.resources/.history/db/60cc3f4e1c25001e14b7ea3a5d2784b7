@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class ReverseString {
+	public static void main (String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("ENter a String you want to reverse");
+		sc.next();
+		String OriginalString = sc.nextLine();
+		
+		String str= "Infoway Technologies", 
+	    ReverseString="";
+		char ch;
+	
+	System.out.print("Original String: ");
+	System.out.println("Infoway Technologies"); 
+	
+	for (int i=0; i<str.length(); i++)
+	{
+		ch= str.charAt(i); 
+		ReverseString= ch+ReverseString; 
+	}
+	System.out.println("Reversed String: "+ ReverseString);
+	}
+}
+
+
